@@ -1,0 +1,722 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Bootstrap 3 Template</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+ 
+    <!-- Bootstrap core CSS -->
+    <link href="http://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.4/css/bootstrap.min.css" rel="stylesheet" media="screen">
+    <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+
+    <style type="text/css">
+      body { 
+        background-color:#F7F7F7; 
+        font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
+        font-size: 14px;
+        line-height: 1.428571429;
+        color: #333;
+      }
+      .navbar {
+        background-color:#FFF;
+        margin-bottom:50px;
+      }
+      .nav a { color:#7f7f7f; }
+      .nav.primary a {
+        font-size:14px;
+        color:#696969;
+        font-weight:bold;
+
+      }
+      .container { 
+        background-color:#FFF;
+        width:1030px;
+        padding:0px;  
+        border-radius:6px;
+      }
+      .panel { min-height:380px; }
+      .account-info {
+        position:absolute;
+        bottom:40px;
+        margin-top:10px;
+        padding:15px 0 0 15px;
+      }
+      .content-type .list-unstyled li {
+        font-size:16px;
+        padding:3px 0 2px;
+      }
+      .content-type small { color:#9f9f9f; }
+      .content-type .list-unstyled li input {
+        margin-right:5px;
+      }
+      .content-type .provision {
+        margin:10px 15px 15px 15px;
+        border:1px solid #EFEFEF;
+        background-color:#FFF;
+        padding:10px 20px 10px;
+        color:#666;
+        font-size:14px;
+      }
+      .content-type > div > .form-actions {
+        margin-top:30px;
+        padding:20px 0;
+        border-top:2px solid #FFF;
+      }
+      .content-type .provision .form-actions {
+        margin-top:20px;
+        padding-bottom:8px;
+      }
+      .content-type nav { margin-top:15px; border-top:2px solid #FFF; }
+      h5 {
+        color:#9F9F9F;
+        text-transform:uppercase;
+        font-size:11px;
+        line-height:11px;
+        letter-spacing:0.6px;
+        font-weight:bold;
+      }
+
+      footer {
+        padding:20px 20px 15px 20px;
+        border-top:1px solid #EFEFEF;
+        text-align:right;
+      }
+
+    </style>
+ 
+    <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!--[if lt IE 9]>
+      <script src="http://cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.2/html5shiv.js"></script>
+      <script src="http://cdnjs.cloudflare.com/ajax/libs/respond.js/1.4.2/respond.js"></script>
+    <![endif]-->
+  </head>
+  <body>
+
+  <nav class="navbar navbar-default">
+    <div class="container-fluid">
+      <div class="navbar-header">
+        <a class="navbar-brand" href="#">
+          <img alt="Brand" src="https://d126fxm3orgy3k.cloudfront.net/organization_logos/placester_logo_165_2x.png" style="height:25px">
+        </a>
+      </div>
+    </div>
+  </nav>
+
+  <div class="container">
+
+    <div style="padding:30px;">
+
+      <div class="row">
+        <div class="col-xs-12">
+
+
+          <div class="row">
+            <div class="col-xs-12">
+              <ul class="nav nav-tabs primary">
+                <li role="presentation"><a href="#" data-tab="dest-single">Accounts</a></li>
+                <li role="presentation"><a href="#" data-tab="dest-multi">Groups</a></li>
+                <li role="presentation"><a href="#" data-tab="dest-multi">Plays</a></li>
+                <li role="presentation"><a href="#" data-tab="dest-multi">Features</a></li>
+                <li role="presentation" class="active"><a href="#" data-tab="dest-multi">Content App</a></li>
+              </ul>
+            </div>
+          </div><br /><br />
+
+        </div>
+      </div>
+
+      <div class="row">
+        <div class="col-sm-6">
+
+          <div class="panel panel-default">
+            <div class="panel-heading">
+              <h3 class="panel-title">Source</h3>
+            </div>
+            <div class="panel-body">
+
+              <div class="row">
+                <div class="col-xs-9">
+                  <input type="text" class="form-control" id="exampleInputName2" placeholder="Account ID" value="6867c7f4-ad7e-4c94-9376-fccdba478bbd">
+                </div>
+                <div class="col-xs-3">
+                  <button type="submit" class="btn btn-default" style="width:100%">Lookup</button>
+                </div>
+              </div>
+
+              <div class="row" style="margin-top:15px;">
+                <div class="col-xs-12">
+                  <div class="form-group">
+                    <select class="form-control">
+                      <option>Demo Site #1</option>
+                      <option>Demo Site #2</option>
+                      <option>Demo Site #3</option>
+                    </select>
+                  </div>
+                </div>
+              </div>
+
+              <div class="row">
+                <div class="col-xs-12">
+                  <button class="btn btn-success" style="width:100%;">Load Content</button>
+                </div>
+              </div>
+
+              <div class="account-info">
+                <h5>Account Info:</h5>
+                <ul class="list-unstyled">
+                  <li>Name: Cleo Wolf</li>
+                  <li>Email: wofl.cleo@gmail.com</li>
+                  <li>Subscription: Monthly Premium</li>
+                  <li>Groups: None</li>
+                </ul>
+              </div>
+
+            </div>
+          </div>
+
+        </div>
+        <div class="col-sm-6">
+
+          <div class="panel panel-default">
+            <div class="panel-heading">
+              <h3 class="panel-title">Destination</h3>
+            </div>
+            <div class="panel-body">
+
+              <div class="row">
+                <div class="col-xs-12">
+                  <ul class="nav nav-tabs" id="dest-tabs">
+                    <li role="presentation" class="active">
+                      <a 
+                        href="javascript:void(0);" 
+                        onclick="toggleDestTabs('single-site-lookup', $(this))">
+                        Single Site
+                      </a>
+                    </li>
+                    <li role="presentation">
+                      <a 
+                        href="javascript:void(0);" 
+                        onclick="toggleDestTabs('multi-account-lookup', $(this))">
+                        Multi-Account
+                      </a>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+                <br />
+              
+              <div id="single-site-lookup">
+                <div class="row">
+                  <div class="col-xs-9">
+                    <input type="text" class="form-control" id="exampleInputName2" placeholder="Account ID" value="000005fc-5f60-4a24-b5d8-e6fdb8ccc484">
+                  </div>
+                  <div class="col-xs-3">
+                    <button type="submit" class="btn btn-default" style="width:100%">Lookup</button>
+                  </div>
+                </div>
+
+                <div class="row" style="margin-top:15px;">
+                  <div class="col-xs-12">
+                    <div class="form-group">
+                      <select class="form-control">
+                        <option>Customer Site #1</option>
+                        <option>Customer Site #2</option>
+                        <option>Customer Site #3</option>
+                      </select>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="account-info" style="">
+                  <h5>Account Info:</h5>
+                  <ul class="list-unstyled">
+                    <li>Name: Margaret Hummus</li>
+                    <li>Email: mhummus@gmail.com</li>
+                    <li>Subscription: Monthly Essential <span class="label label-danger">Doesn't Match!</span></li>
+                    <li>Groups: NAR</li>
+                    <li>Autopilot: (Yes, Opt-in, No)</li>
+                  </ul>
+                </div>
+              </div>
+
+              <div id="multi-account-lookup" style="display:none;">
+                
+                <div class="row">
+                  <div class="col-xs-5">
+                    <h5>Groups</h5>
+                    <select multiple class="form-control" size="10">
+                      <option>Keller Williams (Brand)</option>
+                      <option>RealSatisfied</option>
+                      <option>NAR</option>
+                      <option>REMAX Integra</option>
+                      <option>Placester (Brand)</option>
+                    </select>
+                  </div>
+                  <div class="col-xs-7">
+                    <h5>Plans</h5>
+                    <select multiple class="form-control" size="10">
+                      <option>Monthly Agent Tier 1</option>
+                      <option>Monthly NAR Edition</option>
+                      <option>MobileCRM</option>
+                      <option>Monthly Agent Tier 2</option>
+                      <option>Monthly Essential</option>
+                      <option>Monthly Agent Tier 3</option>
+                      <option>Yearly Agent Tier 1</option>
+                      <option>18-Month Agent Tier 1</option>
+                      <option>Monthly Engagement Bundle</option>
+                      <option>Monthly Premium</option>
+                      <option>Monthly Broker Tier 2</option>
+                      <option>Monthly Broker Tier 1</option>
+                      <option>Monthly Agent Tier 4</option>
+                      <option>Monthly Broker Tier 3</option>
+                      <option>Monthly IDX Website (REALTOR Edition)</option>
+                      <option>Monthly Single Property IDX Website (REALTOR Edition)</option>
+                      <option>Additional IDX Agent Website (REALTOR Edition)</option>
+                      <option>Monthly IDX Website</option>
+                      <option>Advanced Account Assistance - Monthly</option>
+                      <option>Monthly Essential Broker</option>
+                      <option>Agent Marketing Play: Attracting Buyers</option>
+                      <option>Advanced Account Assistance - 3 Month Commitment</option>
+                      <option>Monthly Agent Tier 2 - Inman Deals</option>
+                      <option>18-Month IDX Website</option>
+                      <option>Yearly IDX Website (REALTOR Edition)</option>
+                      <option>Yearly Agent Tier 2</option>
+                      <option>Marketing Coaching - Monthly</option>
+                      <option>Monthly IDX Broker Website (REALTOR Edition)</option>
+                      <option>Monthly Premium Broker</option>
+                      <option>Monthly Single Property IDX Website</option>
+                      <option>6-Month NAR MVP Promotion Site</option>
+                      <option>Marketing Coaching - 3 Month Commitment</option>
+                      <option>Yearly Essential</option>
+                      <option>Additional IDX Agent Website - Monthly</option>
+                      <option>18-Month Agent Tier 2</option>
+                      <option>Yearly Agent Tier 3</option>
+                      <option>Marketing Services Annual Subscription</option>
+                      <option>Yearly IDX Website</option>
+                      <option>Yearly Single Property IDX Website (REALTOR Edition)</option>
+                      <option>18-Month Agent Tier 3</option>
+                      <option>18-Month Single Property IDX Website (REALTOR Edition)</option>
+                      <option>Monthly IDX Broker Website</option>
+                      <option>18-Month Agent Tier 4</option>
+                      <option>Yearly Agent Tier 4</option>
+                      <option>Advanced Account Assistance</option>
+                      <option>Monthly Broker Tier Custom</option>
+                      <option>Yearly Engagement Bundle</option>
+                      <option>Yearly Premium</option>
+                      <option>Facebook Advertising Automation Adspend</option>
+                      <option>Broker Marketing Play: Attracting Buyers</option>
+                      <option>Marketing Services Plan</option>
+                      <option>IDX Agent Websites Starter - Monthly (REALTOR Edition)</option>
+                      <option>IDX Agent Websites Starter - Monthly</option>
+                      <option>Genius Mode Brandco Add-on</option>
+                      <option>Pro Sites Package</option>
+                      <option>Yearly Essential Broker</option>
+                    </select>
+                  </div>
+                </div>
+                <div class="row" style="padding-top:20px;">
+                  <div class="col-xs-12">
+                    <button class="btn btn-success" style="width:100%;">Load Accounts</button>
+                  </div>
+                </div>
+
+                <div class="alert" role="alert" style="margin-bottom:0;">852 active accounts loaded</div>
+
+              </div>
+
+
+
+            </div>
+
+          </div>
+
+        </div>
+
+      <div class="row">
+      </div>
+
+    </div>
+
+    <hr style="padding:30px 0 0;margin-bottom:0;" />
+
+    <div class="row">
+      <div class="col-xs-12">
+        <ul class="nav nav-tabs nav-content">
+          <li role="presentation" class="active"><a href="#" data-tab="pages">Pages</a></li>
+          <li role="presentation"><a href="#" data-tab="posts">Blog Posts</a></li>
+          <li role="presentation"><a href="#" data-tab="blasts">Email Blasts</a></li>
+          <!--
+          <li role="presentation"><a href="#" data-tab="templates">Templates</a></li>
+          <li role="presentation"><a href="#" data-tab="drips">Drip Campaigns</a></li>
+          <li role="presentation"><a href="#" data-tab="ars">AutoResponders</a></li>
+          -->
+          <li role="presentation"><a href="#" data-tab="settings">Site Settings</a></li>
+          <!--
+          <li role="presentation"><a href="#" data-tab="macros">Macros</a></li>
+          -->
+        </ul>
+      </div>
+    </div>
+
+    <div style="margin-top:10px;padding:10px 20px 0;background-color:#F7F7F7;">
+
+      <div id="pages" class="row content-type">
+        <div class="col-xs-12">
+          
+          <h4>Pages</h4>
+          <p>Copy pages from the Source to the Destination specified above</p>
+          <ul class="list-unstyled">
+            <li>
+              <input type="checkbox" value="" checked>
+              <a href="#" target="_blank">About</a> <small>(about)</small>
+              <div class="provision" id="page-provision">
+                <h5>Settings</h5>
+                <div class="radio">
+                  <label>
+                    <input type="radio" name="copy-page-1" id="optionsRadios1" value="option1" checked>
+                    Publish immediately
+                  </label>
+                </div>
+                <div class="radio">
+                  <label>
+                    <input type="radio" name="copy-page-1" id="optionsRadios2" value="option2">
+                    Save as draft
+                  </label>
+                </div>
+                <div class="form-actions">
+                  <button class="btn btn-primary btn-sm">Submit</button>
+                </div>
+              </div>
+            </li>
+            <li>
+              <input type="checkbox" value="">
+              <a href="#" target="_blank">Blog</a> <small>(blog)</small>
+            </li>
+            <li>
+              <input type="checkbox" value="">
+              <a href="#" target="_blank">Contact</a> <small>(contact)</small>
+            </li>
+            <li>
+              <input type="checkbox" value="">
+              <a href="#" target="_blank">Listings Search</a> <small>(listings-search)</small>
+            </li>
+            <li>
+              <input type="checkbox" value="">
+              <a href="#" target="_blank">Buyer Resources</a> <small>(buyer-resources)</small>
+            </li>
+            <li>
+              <input type="checkbox" value="">
+              <a href="#" target="_blank">4 Questions to Ask Before Buying</a> <small>(4-questions-to-ask-before-buying-a-home)</small>
+            </li>
+            <li>
+              <input type="checkbox" value="">
+              <a href="#" target="_blank">Seller Resources</a> <small>(seller-resources)</small>
+            </li>
+            <li>
+              <input type="checkbox" value="">
+              <a href="#" target="_blank">4 Questions to Ask Before Selling</a> <small>(4-questions-to-ask-before-selling-a-home)</small>
+            </li>
+            <li>
+              <input type="checkbox" value="">
+              <a href="#" target="_blank">What's Your Home Worth?</a> <small>(home-worth)</small>
+            </li>
+          </ul>
+          <nav aria-label="Page navigation">
+            <ul class="pagination">
+              <li class="previous"><a href="#"><span aria-hidden="true">&larr;</span> Newer</a></li>
+              <li class="next"><a href="#">Older <span aria-hidden="true">&rarr;</span></a></li>
+            </ul>
+          </nav>
+        </div>
+      </div>
+
+      <div id="posts" class="row content-type" style="display:none;">
+        <div class="col-xs-12">
+          <h4>Blog Posts</h4>
+          <p>Copy blog posts from the Source to the Destination specified above</p>
+          <ul class="list-unstyled">
+            <li>
+              <input type="checkbox" value="" checked>
+              <a href="#" target="_blank">Dealing with Financing</a> <small>(dealing-with-financing)</small>
+              <div class="provision" id="page-provision">
+                <h5>Settings</h5>
+                <div class="radio">
+                  <label>
+                    <input type="radio" name="blog-post-1" id="optionsRadios1" value="option1" checked>
+                    Publish immediately
+                  </label>
+                </div>
+                <div class="radio">
+                  <label>
+                    <input type="radio" name="blog-post-1" id="optionsRadios2" value="option2">
+                    Choose publish date <i class="fa fa-calendar" style="margin-left:3px;cursor:pointer;"></i>
+                  </label>
+                </div>
+                <div class="radio">
+                  <label>
+                    <input type="radio" name="blog-post-1" id="optionsRadios2" value="option2">
+                    Save as draft
+                  </label>
+                </div>
+                <div class="form-actions">
+                  <button class="btn btn-primary btn-sm">Submit</button>
+                </div>
+              </div>
+            </li>
+            <li>
+              <input type="checkbox" value="">
+              <a href="#" target="_blank">Preparing to Sell</a> <small>(preparing-to-sell)</small>
+            </li>
+            <li>
+              <input type="checkbox" value="">
+              <a href="#" target="_blank">Relocating to the Big City</a> <small>(relocating-to-the-big-city)</small>
+            </li>
+            <li>
+              <input type="checkbox" value="">
+              <a href="#" target="_blank">5 Tips for Buying a New Home</a> <small>(5-tips-for-buying-a-new-home)</small>
+            </li>
+            <li>
+              <input type="checkbox" value="">
+              <a href="#" target="_blank">Super Premium Blog Post</a> <small>(super-premium-blog-post)</small>
+            </li>
+            <li>
+              <input type="checkbox" value="">
+              <a href="#" target="_blank">Blog Post #6</a> <small>(blog-post-6)</small>
+            </li>
+            <li>
+              <input type="checkbox" value="">
+              <a href="#" target="_blank">Blog Post #7</a> <small>(blog-post-7)</small>
+            </li>
+            <li>
+              <input type="checkbox" value="">
+              <a href="#" target="_blank">Blog Post #8</a> <small>(blog-post-8)</small>
+            </li>
+            <li>
+              <input type="checkbox" value="">
+              <a href="#" target="_blank">Blog Post #9</a> <small>(blog-post-9)</small>
+            </li>
+            <li>
+              <input type="checkbox" value="">
+              <a href="#" target="_blank">Blog Post #10</a> <small>(blog-post-10)</small>
+            </li>
+          </ul>
+          <nav aria-label="Page navigation">
+            <ul class="pagination">
+              <li class="previous"><a href="#"><span aria-hidden="true">&larr;</span> Newer</a></li>
+              <li class="next"><a href="#">Older <span aria-hidden="true">&rarr;</span></a></li>
+            </ul>
+          </nav>
+        </div>
+      </div>
+
+      <div id="settings" class="row content-type" style="display:none;">
+        <div class="col-xs-12">
+         <h4>Site Settings</h4>
+          <p>Copy site settings from the Source and Destination specified above. Use with caution!</p>
+          <ul class="list-unstyled">
+            <li>
+              <input type="checkbox" value="">
+              Menu
+            </li>
+            <li>
+              <input type="checkbox" value="">
+              Theme Selection
+            </li>
+            <li>
+              <input type="checkbox" value="">
+              Slideshow
+            </li>
+            <li>
+              <input type="checkbox" value="">
+              Search Form
+            </li>
+            <li>
+              <input type="checkbox" value="">
+              Custom CSS & JS
+            </li>
+            <li>
+              <input type="checkbox" value="">
+              Lead Capture
+            </li>
+          </ul>
+          <div class="form-actions">
+            <button class="btn btn-primary">Submit</button>
+          </div>
+        </div>
+      </div>
+
+      <div id="macros" class="row content-type" style="display:none;">
+        <div class="col-xs-12">
+          <h4>Macros</h4>
+          <p>Run macros on the destination site</p>
+          <ul class="list-unstyled" style="border-bottom:1px solid #CCC;">
+            <li style="border-top:1px solid #CCC;padding:10px 0">
+              <input type="checkbox" value="">
+              Create a Group with Plan
+
+              <select id="lead_group-campaign" class="form-control trim" name="campaign" required="required">
+              <option value="6a303367-f132-41be-b65d-b5d17bd7557c">Seller</option><option value="6d72286a-ced6-46fb-a2d4-6e6ddd12e40a">Buyer</option><option value="6a28e7ff-5653-4cc0-b42e-845b42d13910">Branding</option><option value="6f6d4451-2c10-4368-92bc-42a264e43153">Repeat Buyer/Investor</option><option value="d58a0b24-e59b-410d-9010-3e0f45e85f73">Renter</option></select>
+
+              for every Source
+            </li>
+          </ul>
+          <br /><button class="btn btn-primary">Submit</button>
+        </div>
+      </div>
+
+      <div id="blasts" class="row content-type" style="display:none;">
+        <div class="col-xs-12">
+          <h4>Email Blasts</h4>
+          <p>Schedule email blasts directly in the Destination account specified above</p>
+          <ul class="list-unstyled">
+            <li>
+              <input type="checkbox" value="" checked>
+              <a href="#">Meet me for coffee?</a> <small>(Jul 20, 2017)</small>       
+              <div class="provision" id="page-provision">
+                <h5>Settings</h5>
+                <div class="radio">
+                  <label>
+                    <input type="radio" name="blast-1" id="optionsRadios2" value="option2" checked>
+                    Save as draft
+                  </label>
+                </div>
+                <div class="radio">
+                  <label>
+                    <input type="radio" name="blast-1" id="optionsRadios1" value="option1">
+                    Send now
+                  </label>
+                </div>
+                <div class="radio">
+                  <label>
+                    <input type="radio" name="blast-1" id="optionsRadios2" value="option2">
+                    Choose send date <i class="fa fa-calendar" style="margin-left:3px;cursor:pointer;"></i>
+                  </label>
+                </div>
+                <h5>Audience</h5>
+                <div class="checkbox">
+                  <label>
+                    <input type="checkbox" value="">
+                    Content Audience #1
+                  </label>
+                </div>
+                <div class="checkbox">
+                  <label>
+                    <input type="checkbox" value="">
+                    Content Audience #2
+                  </label>
+                </div>
+                <div class="checkbox">
+                  <label>
+                    <input type="checkbox" value="">
+                    Content Audience #3
+                  </label>
+                </div>
+                <div class="checkbox">
+                  <label>
+                    <input type="checkbox" value="">
+                    Content Audience #4
+                  </label>
+                </div>
+                <div class="checkbox">
+                  <label>
+                    <input type="checkbox" value="">
+                    Content Audience #5
+                  </label>
+                </div>
+                <div class="form-actions">
+                  <button class="btn btn-primary btn-sm">Submit</button>
+                </div>
+              </div>              
+            </li>
+            <li>
+              <input type="checkbox" value="">
+              <a href="#">I wanted to share this!</a> <small>(Jul 13, 2017)</small>  
+            </li>
+            <li>
+              <input type="checkbox" value="">
+              <a href="#">Happy Mother's Day</a> <small>(Jul 8, 2017)</small>  
+            </li>
+            <li>
+              <input type="checkbox" value="">
+              <a href="#">You're invited!</a> <small>(Jun 28, 2017)</small>  
+            </li>
+            <li>
+              <input type="checkbox" value="">
+              <a href="#">Email Blast #5</a> <small>(Jun 28, 2017)</small>  
+            </li>
+            <li>
+              <input type="checkbox" value="">
+              <a href="#">Email Blast #6</a> <small>(Jun 21, 2017)</small>  
+            </li>
+            <li>
+              <input type="checkbox" value="">
+              <a href="#">Email Blast #7</a> <small>(Jun 10, 2017)</small>  
+            </li>
+            <li>
+              <input type="checkbox" value="">
+              <a href="#">Email Blast #8</a> <small>(May 21, 2017)</small>  
+            </li>
+            <li>
+              <input type="checkbox" value="">
+              <a href="#">Email Blast #9</a> <small>(May 13, 2017)</small>  
+            </li>
+            <li>
+              <input type="checkbox" value="">
+              <a href="#">Email Blast #10</a> <small>(Apr 18, 2017)</small>  
+            </li>
+          </ul>
+          <nav aria-label="Page navigation">
+            <ul class="pagination">
+              <li class="previous"><a href="#"><span aria-hidden="true">&larr;</span> Newer</a></li>
+              <li class="next"><a href="#">Older <span aria-hidden="true">&rarr;</span></a></li>
+            </ul>
+          </nav>
+        </div>
+      </div>
+
+    </div></div>
+
+    <footer>
+      <p>Powered by <a href="http://placester.com">Placester</a></p>
+    </footer>
+
+  </div>
+
+  <Br /><br /><br />
+
+  <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+  <script src="http://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+  <!-- Include all compiled plugins (below), or include individual files as needed -->
+  <script src="http://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.4/js/bootstrap.min.js"></script>
+
+  <script type="text/javascript">
+    $(".nav-content").find("a").on('click', function(e) {
+      e.preventDefault();
+      $(this).closest("ul").find("li").removeClass("active");
+      $(this).parent().addClass("active");
+      hideAllTabs();
+      $("#" + $(this).data("tab")).show();
+    });
+
+    var hideAllTabs = function() {
+      $("#pages").hide();
+      $("#posts").hide();
+      $("#blasts").hide();
+      $("#templates").hide();
+      $("#drips").hide();
+      $("#settings").hide();
+      $("#macros").hide();
+    };
+
+    var toggleDestTabs = function(sel, el) {
+      $('#single-site-lookup').hide();
+      $('#multi-account-lookup').hide();
+      $('#' + sel).show();
+      $('#dest-tabs').find('li').removeClass('active');
+      el.parent().addClass('active');
+    };
+
+  </script>
+
+
+  </body>
+</html>
