@@ -48,6 +48,8 @@
       .content-type .list-unstyled li input {
         margin-right:5px;
       }
+      .content-type a.expand { color:#AFAFAF; margin-right:3px; }
+      .content-type a.expand:hover { color:#6F6F6F;}
       .content-type .provision {
         margin:10px 15px 15px 15px;
         border:1px solid #EFEFEF;
@@ -364,63 +366,39 @@
           <p>Copy pages from the Source to the Destination specified above. Customers will be notified via email.</p>
           <ul class="list-unstyled">
             <li>
-              <input type="checkbox" value="" checked>
+              <a href="#" class="expand" data-type="page"><i class="fa fa-plus-square-o"></i></a>
               <a href="#" target="_blank">About</a> <small>(about)</small>
-              <div class="provision" id="page-provision">
-                <h5>Settings</h5>
-                <div class="radio">
-                  <label>
-                    <input type="radio" name="copy-page-1" id="optionsRadios2" value="option2" checked>
-                    User Autopilot settings
-                  </label>
-                </div>
-                <div class="radio">
-                  <label>
-                    <input type="radio" name="copy-page-1" id="optionsRadios1" value="option1">
-                    Publish immediately
-                  </label>
-                </div>
-                <div class="radio">
-                  <label>
-                    <input type="radio" name="copy-page-1" id="optionsRadios2" value="option2">
-                    Save as draft
-                  </label>
-                </div>
-                <div class="form-actions">
-                  <button class="btn btn-primary btn-sm">Submit</button>
-                </div>
-              </div>
             </li>
             <li>
-              <input type="checkbox" value="">
+              <a href="#" class="expand" data-type="page"><i class="fa fa-plus-square-o"></i></a>
               <a href="#" target="_blank">Blog</a> <small>(blog)</small>
             </li>
             <li>
-              <input type="checkbox" value="">
+              <a href="#" class="expand" data-type="page"><i class="fa fa-plus-square-o"></i></a>
               <a href="#" target="_blank">Contact</a> <small>(contact)</small>
             </li>
             <li>
-              <input type="checkbox" value="">
+              <a href="#" class="expand" data-type="page"><i class="fa fa-plus-square-o"></i></a>
               <a href="#" target="_blank">Listings Search</a> <small>(listings-search)</small>
             </li>
             <li>
-              <input type="checkbox" value="">
+              <a href="#" class="expand" data-type="page"><i class="fa fa-plus-square-o"></i></a>
               <a href="#" target="_blank">Buyer Resources</a> <small>(buyer-resources)</small>
             </li>
             <li>
-              <input type="checkbox" value="">
+              <a href="#" class="expand" data-type="page"><i class="fa fa-plus-square-o"></i></a>
               <a href="#" target="_blank">4 Questions to Ask Before Buying</a> <small>(4-questions-to-ask-before-buying-a-home)</small>
             </li>
             <li>
-              <input type="checkbox" value="">
+              <a href="#" class="expand" data-type="page"><i class="fa fa-plus-square-o"></i></a>
               <a href="#" target="_blank">Seller Resources</a> <small>(seller-resources)</small>
             </li>
             <li>
-              <input type="checkbox" value="">
+              <a href="#" class="expand" data-type="page"><i class="fa fa-plus-square-o"></i></a>
               <a href="#" target="_blank">4 Questions to Ask Before Selling</a> <small>(4-questions-to-ask-before-selling-a-home)</small>
             </li>
             <li>
-              <input type="checkbox" value="">
+              <a href="#" class="expand" data-type="page"><i class="fa fa-plus-square-o"></i></a>
               <a href="#" target="_blank">What's Your Home Worth?</a> <small>(home-worth)</small>
             </li>
           </ul>
@@ -700,6 +678,32 @@
 
   </div>
 
+  <!-- PAGES -->
+  <div class="provision" id="page-settings" style="display:none;">
+    <h5>Settings</h5>
+    <div class="radio">
+      <label>
+        <input type="radio" name="copy-page-1" id="optionsRadios2" value="option2" checked>
+        User Autopilot settings
+      </label>
+    </div>
+    <div class="radio">
+      <label>
+        <input type="radio" name="copy-page-1" id="optionsRadios1" value="option1">
+        Publish immediately
+      </label>
+    </div>
+    <div class="radio">
+      <label>
+        <input type="radio" name="copy-page-1" id="optionsRadios2" value="option2">
+        Save as draft
+      </label>
+    </div>
+    <div class="form-actions">
+      <button class="btn btn-primary btn-sm">Submit</button>
+    </div>
+  </div>
+
   <Br /><br /><br />
 
   <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
@@ -733,6 +737,29 @@
       $('#dest-tabs').find('li').removeClass('active');
       el.parent().addClass('active');
     };
+
+    $(".expand").on('click', function(e) {
+      e.preventDefault();
+
+      $li = $(this).parent();
+      $settings = $('#' + $(this).data("type") + '-settings');
+
+      // toggle icon
+      $i = $(this).find('i');
+      $i.addClass('fa');
+      if ($i.hasClass('fa-plus-square-o')) {
+        console.log("plus square");
+        $i.removeClass('fa-plus-square-o');
+        $i.addClass('fa-minus-square');
+        $li.append($settings);
+        $settings.show();
+      } else {
+        $i.removeClass('fa-minus-square');
+        $i.addClass('fa-plus-square-o');
+        $settings.hide();
+      }
+
+    });
 
   </script>
 
