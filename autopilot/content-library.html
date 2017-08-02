@@ -342,29 +342,29 @@
 
     <hr style="padding:30px 0 0;margin-bottom:0;" />
 
-    <!--
     <div class="row">
       <div class="col-xs-12">
         <ul class="nav nav-tabs nav-content">
           <li role="presentation" class="active"><a href="#" data-tab="pages">Pages</a></li>
           <li role="presentation"><a href="#" data-tab="posts">Blog Posts</a></li>
           <li role="presentation"><a href="#" data-tab="settings">Site Settings</a></li>
+          <!--
           <li role="presentation"><a href="#" data-tab="blasts">Email Blasts</a></li>
           <li role="presentation"><a href="#" data-tab="templates">Templates</a></li>
           <li role="presentation"><a href="#" data-tab="drips">Drip Campaigns</a></li>
           <li role="presentation"><a href="#" data-tab="ars">AutoResponders</a></li>
           <li role="presentation"><a href="#" data-tab="macros">Macros</a></li>
+          -->
         </ul>
       </div>
     </div>
-    -->
 
     <div style="margin-top:10px;padding:10px 20px 10px 20px;background-color:#F7F7F7;">
 
       <div id="pages" class="row content-type">
         <div class="col-xs-12">
           
-          <h4>Source Pages</h4>
+          <h4>Pages</h4>
           <p>
             Listed below are all the pages currently saved in Source's site.<br />
             Use the provided tools to copy individual pages from the Source to the Destination site.
@@ -457,7 +457,10 @@
       <div id="posts" class="row content-type" style="display:none;">
         <div class="col-xs-12">
           <h4>Blog Posts</h4>
-          <p>Copy blog posts from the Source to the Destination specified above. Customers will be notified via email.</p>
+          <p>
+            Listed below are all the blog posts currently saved in Source's site.<br />
+            Use the provided tools to copy individual posts from the Source to the Destination site.
+          </p>
           <ul class="list-unstyled">
             <li>
               <a href="#" class="expand" data-type="post"><i class="fa fa-plus-square-o"></i></a>
@@ -499,13 +502,27 @@
               <a href="#" class="expand" data-type="post"><i class="fa fa-plus-square-o"></i></a>
               <a href="http://www.wolfrealtydemo.com/2015/10/05/dealing-with-financing/" target="_blank">Blog Post #10</a> <small>(blog-post-10)</small>
             </li>
+            <li>
+              <a href="#" class="expand" data-type="post"><i class="fa fa-plus-square-o"></i></a>
+              <a href="http://www.wolfrealtydemo.com/2015/10/05/dealing-with-financing/" target="_blank">Blog Post #11</a> <small>(blog-post-6)</small>
+            </li>
+            <li>
+              <a href="#" class="expand" data-type="post"><i class="fa fa-plus-square-o"></i></a>
+              <a href="http://www.wolfrealtydemo.com/2015/10/05/dealing-with-financing/" target="_blank">Blog Post #12</a> <small>(blog-post-7)</small>
+            </li>
+            <li>
+              <a href="#" class="expand" data-type="post"><i class="fa fa-plus-square-o"></i></a>
+              <a href="http://www.wolfrealtydemo.com/2015/10/05/dealing-with-financing/" target="_blank">Blog Post #13</a> <small>(blog-post-8)</small>
+            </li>
+            <li>
+              <a href="#" class="expand" data-type="post"><i class="fa fa-plus-square-o"></i></a>
+              <a href="http://www.wolfrealtydemo.com/2015/10/05/dealing-with-financing/" target="_blank">Blog Post #14</a> <small>(blog-post-9)</small>
+            </li>
+            <li>
+              <a href="#" class="expand" data-type="post"><i class="fa fa-plus-square-o"></i></a>
+              <a href="http://www.wolfrealtydemo.com/2015/10/05/dealing-with-financing/" target="_blank">Blog Post #15</a> <small>(blog-post-10)</small>
+            </li>
           </ul>
-          <nav aria-label="Page navigation">
-            <ul class="pagination">
-              <li class="previous"><a href="#"><span aria-hidden="true">&larr;</span> Newer</a></li>
-              <li class="next"><a href="#">Older <span aria-hidden="true">&rarr;</span></a></li>
-            </ul>
-          </nav>
         </div>
       </div>
 
@@ -652,24 +669,17 @@
   </div>
 
   <!-- POSTS -->
-  <div class="provision" id="post-settings" style="display:none;">>
+  <div class="provision" id="post-settings" style="display:none;">
     <h5>Settings</h5>
-    <i>This blog post required editing before publish</i>
     <div class="radio">
       <label>
-        <input type="radio" name="blog-post-1" id="optionsRadios2" value="option2" checked>
-        User Autopilot settings
-      </label>
-    </div>
-    <div class="radio">
-      <label>
-        <input type="radio" name="blog-post-1" id="optionsRadios1" value="option1" disabled>
+        <input type="radio" name="blog-post-1" id="optionsRadios1" value="option1">
         Publish immediately
       </label>
     </div>
     <div class="radio">
       <label>
-        <input type="radio" name="blog-post-1" id="optionsRadios2" value="option2" disabled>
+        <input type="radio" name="blog-post-1" id="optionsRadios2" value="option2">
         Choose publish date <i class="fa fa-calendar" style="margin-left:3px;cursor:pointer;"></i>
       </label>
     </div>
@@ -758,8 +768,13 @@
           <ul>
             <li><strong>Source:</strong> [Source Site Name]</li>
             <li><strong>Destination:</strong> [Destination Site Name]</li>
-            <li><strong>Page:</strong> [Page Name]</li>
-            <li><strong>Publish:</strong> (Immediately, Save as Draft)</li>
+            <li><strong>Content:</strong>
+              <ul>
+                <li><strong>Type:</strong> (Blog Post, Page, ...)</li>
+                <li><strong>Title:</strong> [Content Title or Subject]</li>
+                <li><strong>Publish:</strong> (Immediately, Save as Draft)</li>
+              </ul>
+            </li>
           </ul>
         </div>
         <div class="modal-footer">
