@@ -349,8 +349,8 @@
           <li role="presentation"><a href="#" data-tab="posts">Blog Posts</a></li>
           <li role="presentation"><a href="#" data-tab="settings">Site Settings</a></li>
           <li role="presentation"><a href="#" data-tab="templates">Templates</a></li>
-          <li role="presentation"><a href="#" data-tab="blasts">Email Blasts</a></li>
           <!--
+          <li role="presentation"><a href="#" data-tab="blasts">Email Blasts</a></li>
           <li role="presentation"><a href="#" data-tab="drips">Drip Campaigns</a></li>
           <li role="presentation"><a href="#" data-tab="ars">AutoResponders</a></li>
           <li role="presentation"><a href="#" data-tab="macros">Macros</a></li>
@@ -594,6 +594,7 @@
           <div class="form-group">
             <label class="form-label">Filter by:</label>
             <select class="form-control">
+              <option>All</option>
               <option>Email</option>
               <option>Autoresponder</option>
               <option>Email Blast</option>
@@ -602,7 +603,7 @@
           <ul class="list-unstyled" style="border-top:1px solid #E3E3E3;padding-top:10px;">
             <li>
               <a href="#" class="expand" data-type="template"><i class="fa fa-plus-square-o"></i></a>
-              <a href="#">Buyer Financing: Placester</a> <small>(Email)</small>
+              <a href="#">Buyer Financing: Placester</a> <small>(Email Blast)</small>
             </li>
             <li>
               <a href="#" class="expand" data-type="template"><i class="fa fa-plus-square-o"></i></a>
@@ -610,7 +611,7 @@
             </li>
             <li>
               <a href="#" class="expand" data-type="template"><i class="fa fa-plus-square-o"></i></a>
-              <a href="#">Tips for Buying a Home: Placester</a> <small>(Email)</small>
+              <a href="#">Tips for Buying a Home: Placester</a> <small>(Autoresponder)</small>
             </li>
             <li>
               <a href="#" class="expand" data-type="template"><i class="fa fa-plus-square-o"></i></a>
@@ -618,11 +619,11 @@
             </li>
             <li>
               <a href="#" class="expand" data-type="template"><i class="fa fa-plus-square-o"></i></a>
-              <a href="#">Getting Started for Buyers: Placester</a> <small>(Email)</small>
+              <a href="#">Getting Started for Buyers: Placester</a> <small>(Email Blast)</small>
             </li>
             <li>
               <a href="#" class="expand" data-type="template"><i class="fa fa-plus-square-o"></i></a>
-              <a href="#">My experience</a> <small>(Email)</small>
+              <a href="#">My experience</a> <small>(Autoresponder)</small>
             </li>
             <li>
               <a href="#" class="expand" data-type="template"><i class="fa fa-plus-square-o"></i></a>
@@ -630,15 +631,15 @@
             </li>
             <li>
               <a href="#" class="expand" data-type="template"><i class="fa fa-plus-square-o"></i></a>
-              <a href="#">Saved search</a> <small>(Email)</small>
+              <a href="#">Saved search</a> <small>(Email Blast)</small>
             </li>
             <li>
               <a href="#" class="expand" data-type="template"><i class="fa fa-plus-square-o"></i></a>
-              <a href="#">Relocating Locally: Placester</a> <small>(Email)</small>
+              <a href="#">Relocating Locally: Placester</a> <small>(Autoresponder)</small>
             </li>
             <li>
               <a href="#" class="expand" data-type="template"><i class="fa fa-plus-square-o"></i></a>
-              <a href="#">Mobile Friendly Site: Placester</a> <small>(Email)</small>
+              <a href="#">Mobile Friendly Site: Placester</a> <small>(Email Blast)</small>
             </li>
           </ul>
           <nav aria-label="Page navigation">
@@ -774,10 +775,19 @@
 
   <!-- Templates -->
   <div class="provision" id="template-settings" style="display:none;">
-    <p>
-      <label>Subject:</label>
-      Tips for both buyers and sellers
-    </p>
+    <h5>Settings</h5>
+    <div class="radio">
+      <label>
+        <input type="radio" name="template-1" id="optionsRadios2" value="option2">
+        Copy Template Only
+      </label>
+    </div>
+    <div class="radio">
+      <label>
+        <input type="radio" name="template-1" id="optionsRadios2" value="option2">
+        Save as Email Blast Draft
+      </label>
+    </div>
     <div class="form-actions">
       <button type="button" class="btn btn-primary btn-sm">
         Copy
