@@ -348,12 +348,12 @@
           <li role="presentation" class="active"><a href="#" data-tab="pages">Pages</a></li>
           <li role="presentation"><a href="#" data-tab="posts">Blog Posts</a></li>
           <li role="presentation"><a href="#" data-tab="settings">Site Settings</a></li>
+          <li role="presentation"><a href="#" data-tab="drips">Drip Campaigns</a></li>
           <!--
           <li role="presentation"><a href="#" data-tab="templates">Templates</a></li>
-          <li role="presentation"><a href="#" data-tab="blasts">Email Blasts</a></li>
-          <li role="presentation"><a href="#" data-tab="drips">Drip Campaigns</a></li>
           <li role="presentation"><a href="#" data-tab="ars">AutoResponders</a></li>
-          <li role="presentation"><a href="#" data-tab="macros">Macros</a></li>
+          <li role="presentation"><a href="#" data-tab="blasts">Email Blasts</a></li>
+          <li rol e="presentation"><a href="#" data-tab="macros">Macros</a></li>
           -->
         </ul>
       </div>
@@ -650,60 +650,180 @@
         </div>
       </div>
 
-      <div id="blasts" class="row content-type" style="display:none;">
+
+      <div id="templates" class="row content-type" style="display:none;">
         <div class="col-xs-12">
-          <h4>Email Blasts</h4>
-          <p>Schedule email blasts directly in the Destination account specified above. Customers will be notified via email.</p>
-          <ul class="list-unstyled">
+          <div class="form-group">
+            <label class="form-label">Filter by:</label>
+            <select class="form-control">
+              <option>All</option>
+              <option>Email</option>
+              <option>Autoresponder</option>
+              <option>Email Blast</option>
+            </select>
+          </div>
+          <ul class="list-unstyled" style="border-top:1px solid #E3E3E3;padding-top:10px;">
             <li>
-              <a href="#" class="expand" data-type="blast"><i class="fa fa-plus-square-o"></i></a>
-              <a href="#">Meet me for coffee?</a> <small>(Jul 20, 2017)</small>       
+              <a href="#" class="expand" data-type="template"><i class="fa fa-plus-square-o"></i></a>
+              <a href="#">Buyer Financing: Placester</a> <small>(Email Blast)</small>
             </li>
             <li>
-              <a href="#" class="expand" data-type="blast"><i class="fa fa-plus-square-o"></i></a>
-              <a href="#">I wanted to share this!</a> <small>(Jul 13, 2017)</small>  
+              <a href="#" class="expand" data-type="template"><i class="fa fa-plus-square-o"></i></a>
+              <a href="#">Check Out The Blog: Placester</a> <small>(Email)</small>
             </li>
             <li>
-              <a href="#" class="expand" data-type="blast"><i class="fa fa-plus-square-o"></i></a>
-              <a href="#">Happy Mother's Day</a> <small>(Jul 8, 2017)</small>  
+              <a href="#" class="expand" data-type="template"><i class="fa fa-plus-square-o"></i></a>
+              <a href="#">Tips for Buying a Home: Placester</a> <small>(Autoresponder)</small>
             </li>
             <li>
-              <a href="#" class="expand" data-type="blast"><i class="fa fa-plus-square-o"></i></a>
-              <a href="#">You're invited!</a> <small>(Jun 28, 2017)</small>  
+              <a href="#" class="expand" data-type="template"><i class="fa fa-plus-square-o"></i></a>
+              <a href="#">Purchase timeline</a> <small>(Email)</small>
             </li>
             <li>
-              <a href="#" class="expand" data-type="blast"><i class="fa fa-plus-square-o"></i></a>
-              <a href="#">Email Blast #5</a> <small>(Jun 28, 2017)</small>  
+              <a href="#" class="expand" data-type="template"><i class="fa fa-plus-square-o"></i></a>
+              <a href="#">Getting Started for Buyers: Placester</a> <small>(Email Blast)</small>
             </li>
             <li>
-              <a href="#" class="expand" data-type="blast"><i class="fa fa-plus-square-o"></i></a>
-              <a href="#">Email Blast #6</a> <small>(Jun 21, 2017)</small>  
+              <a href="#" class="expand" data-type="template"><i class="fa fa-plus-square-o"></i></a>
+              <a href="#">My experience</a> <small>(Autoresponder)</small>
             </li>
             <li>
-              <a href="#" class="expand" data-type="blast"><i class="fa fa-plus-square-o"></i></a>
-              <a href="#">Email Blast #7</a> <small>(Jun 10, 2017)</small>  
+              <a href="#" class="expand" data-type="template"><i class="fa fa-plus-square-o"></i></a>
+              <a href="#">Tips for Selling a Home: Placester</a> <small>(Email)</small>
             </li>
             <li>
-              <a href="#" class="expand" data-type="blast"><i class="fa fa-plus-square-o"></i></a>
-              <a href="#">Email Blast #8</a> <small>(May 21, 2017)</small>  
+              <a href="#" class="expand" data-type="template"><i class="fa fa-plus-square-o"></i></a>
+              <a href="#">Saved search</a> <small>(Email Blast)</small>
             </li>
             <li>
-              <a href="#" class="expand" data-type="blast"><i class="fa fa-plus-square-o"></i></a>
-              <a href="#">Email Blast #9</a> <small>(May 13, 2017)</small>  
+              <a href="#" class="expand" data-type="template"><i class="fa fa-plus-square-o"></i></a>
+              <a href="#">Relocating Locally: Placester</a> <small>(Autoresponder)</small>
             </li>
             <li>
-              <a href="#" class="expand" data-type="blast"><i class="fa fa-plus-square-o"></i></a>
-              <a href="#">Email Blast #10</a> <small>(Apr 18, 2017)</small>  
+              <a href="#" class="expand" data-type="template"><i class="fa fa-plus-square-o"></i></a>
+              <a href="#">Mobile Friendly Site: Placester</a> <small>(Email Blast)</small>
             </li>
           </ul>
           <nav aria-label="Page navigation">
             <ul class="pagination">
-              <li class="previous"><a href="#"><span aria-hidden="true">&larr;</span> Newer</a></li>
-              <li class="next"><a href="#">Older <span aria-hidden="true">&rarr;</span></a></li>
+              <li class="previous"><a href="javascript:void(0)"><span aria-hidden="true">&larr;</span> Newer</a></li>
+              <li class="next"><a href="javascript:void(0)">Older <span aria-hidden="true">&rarr;</span></a></li>
             </ul>
-          </nav>
         </div>
       </div>
+
+
+      <div id="drips" class="row content-type" style="display:none;">
+        <div class="col-xs-12">
+          <h4>
+          Drip Campaigns
+         </h4>
+          <p>
+            The following will happen on copy:
+            <ol>
+              <li>All required templates will be created in the destination account (even if they already exist)</li>
+              <li>A new drip campaign will be created with all of the necessary steps + templates from #1</li>
+            </ol>
+          </p>
+          <ul class="list-unstyled" style="border-top:1px solid #E3E3E3;padding-top:10px;">
+            <li>
+              <a href="#" class="expand" data-type="drip"><i class="fa fa-plus-square-o"></i></a>
+              <a href="#">Buyer Financing: Placester</a>
+            </li>
+            <li>
+              <a href="#" class="expand" data-type="drip"><i class="fa fa-plus-square-o"></i></a>
+              <a href="#">Check Out The Blog: Placester</a>
+            </li>
+            <li>
+              <a href="#" class="expand" data-type="drip"><i class="fa fa-plus-square-o"></i></a>
+              <a href="#">Tips for Buying a Home: Placester</a>
+            </li>
+            <li>
+              <a href="#" class="expand" data-type="drip"><i class="fa fa-plus-square-o"></i></a>
+              <a href="#">Purchase timeline</a> 
+            </li>
+            <li>
+              <a href="#" class="expand" data-type="drip"><i class="fa fa-plus-square-o"></i></a>
+              <a href="#">Getting Started for Buyers: Placester</a>
+            </li>
+            <li>
+              <a href="#" class="expand" data-type="drip"><i class="fa fa-plus-square-o"></i></a>
+              <a href="#">My experience</a>
+            </li>
+            <li>
+              <a href="#" class="expand" data-type="drip"><i class="fa fa-plus-square-o"></i></a>
+              <a href="#">Tips for Selling a Home: Placester</a>
+            </li>
+            <li>
+              <a href="#" class="expand" data-type="drip"><i class="fa fa-plus-square-o"></i></a>
+              <a href="#">Saved search</a>
+            </li>
+            <li>
+              <a href="#" class="expand" data-type="drip"><i class="fa fa-plus-square-o"></i></a>
+              <a href="#">Relocating Locally: Placester</a>
+            </li>
+            <li>
+              <a href="#" class="expand" data-type="drip"><i class="fa fa-plus-square-o"></i></a>
+              <a href="#">Mobile Friendly Site: Placester</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+
+
+      <div id="autoresponders" class="row content-type" style="display:none;">
+        <div class="col-xs-12">
+          <ul class="list-unstyled" style="border-top:1px solid #E3E3E3;padding-top:10px;">
+            <li>
+              <a href="#" class="expand" data-type="template"><i class="fa fa-plus-square-o"></i></a>
+              <a href="#">Buyer Financing: Placester</a> <small>(Email Blast)</small>
+            </li>
+            <li>
+              <a href="#" class="expand" data-type="template"><i class="fa fa-plus-square-o"></i></a>
+              <a href="#">Check Out The Blog: Placester</a> <small>(Email)</small>
+            </li>
+            <li>
+              <a href="#" class="expand" data-type="template"><i class="fa fa-plus-square-o"></i></a>
+              <a href="#">Tips for Buying a Home: Placester</a> <small>(Autoresponder)</small>
+            </li>
+            <li>
+              <a href="#" class="expand" data-type="template"><i class="fa fa-plus-square-o"></i></a>
+              <a href="#">Purchase timeline</a> <small>(Email)</small>
+            </li>
+            <li>
+              <a href="#" class="expand" data-type="template"><i class="fa fa-plus-square-o"></i></a>
+              <a href="#">Getting Started for Buyers: Placester</a> <small>(Email Blast)</small>
+            </li>
+            <li>
+              <a href="#" class="expand" data-type="template"><i class="fa fa-plus-square-o"></i></a>
+              <a href="#">My experience</a> <small>(Autoresponder)</small>
+            </li>
+            <li>
+              <a href="#" class="expand" data-type="template"><i class="fa fa-plus-square-o"></i></a>
+              <a href="#">Tips for Selling a Home: Placester</a> <small>(Email)</small>
+            </li>
+            <li>
+              <a href="#" class="expand" data-type="template"><i class="fa fa-plus-square-o"></i></a>
+              <a href="#">Saved search</a> <small>(Email Blast)</small>
+            </li>
+            <li>
+              <a href="#" class="expand" data-type="template"><i class="fa fa-plus-square-o"></i></a>
+              <a href="#">Relocating Locally: Placester</a> <small>(Autoresponder)</small>
+            </li>
+            <li>
+              <a href="#" class="expand" data-type="template"><i class="fa fa-plus-square-o"></i></a>
+              <a href="#">Mobile Friendly Site: Placester</a> <small>(Email Blast)</small>
+            </li>
+          </ul>
+          <nav aria-label="Page navigation">
+            <ul class="pagination">
+              <li class="previous"><a href="javascript:void(0)"><span aria-hidden="true">&larr;</span> Newer</a></li>
+              <li class="next"><a href="javascript:void(0)">Older <span aria-hidden="true">&rarr;</span></a></li>
+            </ul>
+        </div>
+      </div>
+
+
 
     </div></div>
 
@@ -728,12 +848,29 @@
         Save as draft
       </label>
     </div>
-    <div class="checkbox">
-      <label>
-        <input type="checkbox" name="copy-page-2" id="optionsRadios2" value="option2">
-        Add to Menu?<br />
-        <input type="text" class="form-control input-sm" value="Page Title Goes Here" style="padding-top:5px;" />
-      </label>
+    <a href="#" class="customize-content">Customize content before copy</a>
+    <div style="display:none;">
+      <hr />
+      <div class="form-group">
+        <label class="form-label">Title</label>
+        <input type="text" class="form-control" value="Page Title Goes Here" />
+      </div>
+      <div class="form-group">
+        <label class="form-label">Body (HTML)</label>
+        <textarea class="form-control" rows="10">
+<p>We understand that buying or selling a home is more than just a transaction: it&rsquo;s a life-changing experience. That&rsquo;s why our team of highly-seasoned real estate professionals is dedicated to providing exceptional, personalized service for all of our clients. We take great pride in the relationships we build and always work relentlessly on the client&rsquo;s behalf to help them achieve their real estate goals.</p>
+<p>Our team of experts represents the best and brightest in the industry, and we&rsquo;re always striving to lead the field in research, innovation, and consumer education. Today&rsquo;s buyers and sellers need a trusted resource that can guide them through the complex world of real estate. With our extensive knowledge and commitment to providing only the best and most timely information to our clients, we are your go-to source for real estate industry insight and advice.</p>
+<h4>Our Mission Statement:</h4>
+<p>Our philosophy is simple: clients come first. We pledge to be in constant communication with our clients, keeping them fully informed throughout the entire buying or selling process. We believe that if you&rsquo;re not left with an amazing experience, we haven&rsquo;t done our job. We don&rsquo;t measure success through achievements or awards, but through the satisfaction of our clients.</p>
+        </textarea>
+      </div>
+      <div class="checkbox">
+        <label>
+          <input type="checkbox" name="copy-page-2" id="optionsRadios2" value="option2">
+          Add to Menu? Edit Title below:<br />
+          <input type="text" class="form-control input-sm" value="Page Title Goes Here" style="padding-top:5px;" />
+        </label>
+      </div>
     </div>
     <div class="form-actions">
       <button type="button" class="btn btn-primary btn-sm">
@@ -744,9 +881,9 @@
 
   <!-- SETTINGS -->
   <div class="provision" id="setting-settings" style="display:none;">
-      <button type="button" class="btn btn-primary btn-sm">
-        Copy Settings
-      </button>
+    <button type="button" class="btn btn-primary btn-sm">
+      Copy Settings
+    </button>
   </div>
 
   <!-- POSTS -->
@@ -770,6 +907,23 @@
         Save as draft
       </label>
     </div>
+   <a href="#" class="customize-content">Customize content before copy</a>
+    <div style="display:none;">
+      <hr />
+      <div class="form-group">
+        <label class="form-label">Title</label>
+        <input type="text" class="form-control" value="Page Title Goes Here" />
+      </div>
+      <div class="form-group">
+        <label class="form-label">Body (HTML)</label>
+        <textarea class="form-control" rows="10">
+<p>We understand that buying or selling a home is more than just a transaction: it&rsquo;s a life-changing experience. That&rsquo;s why our team of highly-seasoned real estate professionals is dedicated to providing exceptional, personalized service for all of our clients. We take great pride in the relationships we build and always work relentlessly on the client&rsquo;s behalf to help them achieve their real estate goals.</p>
+<p>Our team of experts represents the best and brightest in the industry, and we&rsquo;re always striving to lead the field in research, innovation, and consumer education. Today&rsquo;s buyers and sellers need a trusted resource that can guide them through the complex world of real estate. With our extensive knowledge and commitment to providing only the best and most timely information to our clients, we are your go-to source for real estate industry insight and advice.</p>
+<h4>Our Mission Statement:</h4>
+<p>Our philosophy is simple: clients come first. We pledge to be in constant communication with our clients, keeping them fully informed throughout the entire buying or selling process. We believe that if you&rsquo;re not left with an amazing experience, we haven&rsquo;t done our job. We don&rsquo;t measure success through achievements or awards, but through the satisfaction of our clients.</p>
+        </textarea>
+      </div>
+    </div>
     <div class="form-actions">
       <button class="btn btn-primary btn-sm">Copy Post</button>
     </div>
@@ -786,7 +940,7 @@
     </div>
     <div class="radio">
       <label>
-        <input type="radio" name="template-1" id="optionsRadios2" value="option2">
+        <input type="radio" name="template-1" id="optionsRadios2" value="option2" disabled>
         Save as Email Blast Draft
       </label>
     </div>
@@ -796,6 +950,25 @@
       </button>
     </div>
   </div>
+
+  <!-- Drips -->
+  <div class="provision" id="drip-settings" style="display:none;">
+    <button type="button" class="btn btn-primary btn-sm">
+      Copy
+    </button>
+  </div>
+
+  <!-- Autoresponders -->
+  <div class="provision" id="autoresponder-settings" style="display:none;">
+    <h5>Settings</h5>
+    <p>
+      <div class="form-actions">
+        <button type="button" class="btn btn-primary btn-sm">
+          Copy
+        </button>
+      </div>
+  </div>
+
 
   <!-- EMAIL BLASTS -->
   <div class="provision" id="blast-settings" style="display:none;">
@@ -959,6 +1132,18 @@
       }
     }
 
+    $(document).on('click', '.provision .customize-content', function(e) {
+      e.preventDefault();
+
+      var $div = $(this).next();
+      if ($div.is(':visible')) {
+        $div.hide();
+      } else {
+        $div.show();
+      }
+
+    });
+
     $(document).on('click', '.provision .btn-primary', function(e) {
       var id = $(this).closest('.provision').attr('id');
       var $modal = $('#confirm-modal');
@@ -973,8 +1158,7 @@
       var $settings = $('#' + id);
       var $li = $settings.closest('li');
       toggleSettings($li, 'close');
-
-    })
+    });
 
   </script>
 
